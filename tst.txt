@@ -1,0 +1,12 @@
+$.ajax({
+url: "http://202.218.224.150/NMWAPI/api/TestAPI/TestAction/",
+type: 'GET',
+dataType: 'json',
+data: { 'id': 'Hellow world' },
+success: function (data) {
+alert(data);
+},
+error: function (xhr, status, err) {
+alert(xhr + "," + status + "," + err);
+}
+});
